@@ -1,0 +1,5 @@
+l=[78,56,4573,"juan",9084]# Definir la lista
+i=0# Inicializar el índice
+while i<len(l):#se repite mientras el largo de "l" sea mayor que "i"
+    print(l[i])# Usar un bucle while para recorrer la lista
+    i+=1#realiza una suma para que se valla acabando la lista
