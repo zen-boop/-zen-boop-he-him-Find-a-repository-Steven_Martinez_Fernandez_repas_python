@@ -1,0 +1,15 @@
+cal=[]#crea la lista
+while True:#se repetrira mientrsas sea verdadero
+    e=input("Introduce una calificación (o 'salir' para terminar): ")#hace que pongas la calificacion y al no definirla tambien salir
+    if e.lower()=='salir':#se realiza si e es igual a salir
+        break#rompe el while
+    try:#el try detecta errores y evita que salga algun error y lo separa
+        cali=float(e)#hace que la "cali" sea igual a "e" como float y el try evita error con letras o numeros muy grandes
+        if 0 <=cali<=10:#si 0 es menoir o igual a "cali" o "cali" menor o igual a 10 se realixzaq lo de abajo
+            cal.append(cali)#agrega la calificacion
+        else:#si no se cumple la condicion s realiza lo de abajo
+            print("Por favor, introduce una calificación entre 0 y 10.")#coloca que solo se pueden valores entre 0 y 10<
+    except ValueError:#gracias al try evita error y lo separa y suelta el mensaje de abajo
+        print("Entrada no válida. Por favor, introduce un número.")#te dice que debes poner numeros
+cal.sort()#acomoda de menor a mayor
+print("Calificaciones ingresadas:", cal)#imprime las calificaciones en orden
