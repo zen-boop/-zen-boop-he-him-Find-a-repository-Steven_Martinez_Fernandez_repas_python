@@ -1,0 +1,5 @@
+ms=5# Número máximo de estrellas en la mitad del dibujo
+for i in range(1, ms + 1):#coloca la cantidad de estrellas de ariba
+    print('*' * i)# Parte superior del dibujo
+for i in range(ms - 1, 0, -1):#coloca la cantidad de estrellas de abajo
+    print('*' * i)# Parte inferior del dibujo
